@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+/* 전체 배경: 은은한 책상 느낌 또는 심플한 배경 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e8e4dc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* 옥스포드 노트 본체 */
+.notebook-container {
+    position: relative;
+    width: 150%;
+    max-width: 650px;
+    min-height: 80vh;
+    margin: 40px auto;
+    box-sizing: border-box;
+
+    /* ★ 상단 패딩을 줄 높이(40px)의 배수로 맞춥니다 (상단 검은 제본선 고려) */
+    padding: 40px 30px 40px 80px;
+
+    /* 노란색 배경 */
+    background-color: #faf0a6;
+
+    /* 40px 간격의 파란색 줄눈 */
+    background-image: repeating-linear-gradient(
+            transparent,
+            transparent 39px,
+            #a2c0dc 39px,
+            #a2c0dc 40px
+    );
+
+    /* 노트 상단 제본 테이프 */
+    border-top: 24px solid #2b2b2b;
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 붉은색 세로선 */
+.notebook-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    width: 2px;
+    border-left: 1px solid #ff7b7b;
+    border-right: 1px solid #ff7b7b;
+}
+
+/* 글씨 스타일 (줄 위에 정확히 얹기) */
+.notebook-container h1,
+.notebook-container h2,
+.notebook-container p,
+.notebook-container div {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: #1a2a44;
+
+    /* ★ 핵심: 높이와 줄간격을 줄눈 크기(40px)로 정확히 고정 */
+    height: 40px;
+    line-height: 36px; /* 줄 바로 위에 살짝 닿도록 34~38px 사이로 미세 조절 */
+
+    /* ★ 글씨 사이를 1칸씩 띄우고 싶다면 아래 40px 유지 (줄 1칸 크기 = 40px) */
+    /* 만약 2칸씩 띄우고 싶다면 80px로 변경하세요 */
+    margin: 0 0 40px 0;
+    padding: 0;
+}
