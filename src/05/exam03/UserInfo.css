@@ -1,0 +1,16 @@
+/* UserInfo.css */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.user-info-name {
+    /* 둥글둥글한 폰트 적용 */
+    font-family: 'Nunito', ui-rounded, "NanumSquareRound", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #f0f0f0;
+    cursor: pointer;
+}

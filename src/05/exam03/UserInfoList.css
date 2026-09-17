@@ -1,0 +1,44 @@
+/* UserInfoList.css */
+
+/* 둥근 영문 폰트(Nunito) 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+    /* 첨부된 이미지의 전체 배경 톤 적용 */
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.comment {
+    /* 첨부된 이미지 중앙의 밝은 띠 느낌을 살린 색상 */
+    background-color: #2b2b2b;
+    max-width: 470px;
+    margin: 0 auto 12px auto;
+    padding: 18px 22px;
+
+    /* 요소 자체도 둥글둥글하게 변경 */
+    border-radius: 24px;
+
+    /* 둥근 폰트 적용 */
+    font-family: 'Nunito', ui-rounded, "NanumSquareRound", sans-serif;
+    /* 기존의 딱딱한 경계선(border-bottom) 제거 및 은은한 그림자 추가 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.comment-text {
+    font-size: 15px;
+    color: #eaeaea;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    padding-left: 60px;
+    font-weight: 600;
+}
+
+.comment-date {
+    font-size: 12px;
+    color: #999999;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
