@@ -17,14 +17,17 @@ import reportWebVitals from './reportWebVitals';
 // import NotificationList from "./06/NotificationList";
 // import Counter from './07/Counter';
 // import TextInputWithFocusButton from "./07/TextInputWithFocusButton";
-import Accommodate from "./07/Accommodate";
+// import Accommodate from "./07/Accommodate";
+// import Toggle from './08/Toggle';
+// import MyButton from "./08/MyButton";
+import Toggle2 from './08/Toggle2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 setInterval(() => {
         root.render(
             <React.StrictMode>
-                <Accommodate/>
+                <Toggle2 />
             </React.StrictMode>
         );
     },   1000
