@@ -24,14 +24,20 @@ import reportWebVitals from './reportWebVitals';
 // import MyButton2 from "./08/MyButton2";
 // import ConfirmButton from "./08/ConfirmButton";
 // import ConfirmButton2 from "./08/ConfirmButton2";
-import MessageSender from "./08/MessageSender";
+// import MessageSender from "./08/MessageSender";
+// import Greeting from './09/ex1/Greeting';
+// import LoginControl from "./09/ex2/LoginControl";
+// import Mailbox from "./09/ex3/Mailbox";
+// import LoginControl2 from "./09/ex3/LoginControl2";
+// import MainPage from './09/ex4/MainPage';
+import LandingPage from "./09/ex5/LandingPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 setInterval(() => {
         root.render(
             <React.StrictMode>
-                <MessageSender/>
+                <LandingPage/>
             </React.StrictMode>
         );
     },   1000

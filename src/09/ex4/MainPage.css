@@ -1,0 +1,48 @@
+/* 메인 페이지 컨테이너 */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 경고 배너 스타일 (WarningBanner 컴포넌트용) */
+.warning-banner {
+    width: 100%;
+    background-color: #fee2e2; /* 연한 빨간색 배경 */
+    color: #b91c1c; /* 진한 빨간색 텍스트 */
+    border: 1px solid #f87171;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+}
+
+/* 토글 버튼 스타일 */
+.toggle-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4b5563; /* 차분한 회색 */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:hover {
+    background-color: #374151; /* hover 시 약간 더 어두운 회색 */
+}
+
+.toggle-btn:active {
+    transform: translateY(2px); /* 클릭 시 눌리는 효과 */
+}
