@@ -1,0 +1,82 @@
+/* 폼 전체를 감싸는 카드 컨테이너 스타일 */
+.reservation-form {
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 폼 내부 텍스트 제목 */
+.reservation-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+/* 각 라벨을 감싸는 그룹 영역 */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* 라벨 내부의 텍스트와 입력창을 양쪽 끝으로 배치 */
+.reservation-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #495057;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* 체크박스 스타일 */
+.reservation-checkbox {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #007bff; /* 브라우저 기본 체크박스 색상 변경 */
+}
+
+/* 숫자 입력창 스타일 */
+.reservation-input {
+    width: 80px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    text-align: right;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* 숫자 입력창 활성화 시 테두리 색상 강조 */
+.reservation-input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* 제출 버튼 스타일 */
+.reservation-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 제출 버튼 마우스 오버 효과 */
+.reservation-btn:hover {
+    background-color: #0056b3;
+}

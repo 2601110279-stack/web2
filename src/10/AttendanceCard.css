@@ -1,0 +1,68 @@
+/* 전체 컨테이너 스타일 */
+.attendance-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 제목 스타일 */
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+/* 카드 리스트 정렬 */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 개별 학생 카드 스타일 */
+.student-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.student-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 아바타 이미지 스타일 */
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #e9ecef;
+}
+
+/* 학생 정보 텍스트 영역 */
+.student-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-info h3 {
+    margin: 0 0 6px 0;
+    color: #212529;
+    font-size: 1.2rem;
+}
+
+.student-info p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
