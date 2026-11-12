@@ -1,0 +1,143 @@
+/* 전체 배경: 모눈종이(도트 그리드) 실험 노트 느낌 */
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fef9c3;
+    background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* 전체 계산기 카드 컨테이너 */
+#root > div {
+    max-width: 420px;
+    margin: 56px auto;
+    padding: 28px 24px;
+    background-color: #ffffff;
+    border: 3px solid #1e293b;
+    border-radius: 22px;
+    box-shadow: 8px 8px 0px #1e293b;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 섭씨 / 화씨 입력 카드 공통 */
+#root > div fieldset {
+    margin: 0;
+    padding: 18px 20px 20px;
+    border: 2.5px solid #1e293b;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #1e293b;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* 마우스를 올리면 카드가 통통 튀어 오르는 효과 */
+#root > div fieldset:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #1e293b;
+}
+
+/* 섭씨 카드 (시원한 아이스 블루 테마) */
+#root > div fieldset:first-of-type {
+    background-color: #e0f2fe;
+}
+
+/* 화씨 카드 (따뜻한 선셋 오렌지 테마) */
+#root > div fieldset:last-of-type {
+    background-color: #ffedd5;
+}
+
+/* 알약 모양의 입체 제목 라벨 (legend) */
+#root > div legend {
+    padding: 5px 14px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: #ffffff;
+    border: 2px solid #1e293b;
+    border-radius: 999px;
+    box-shadow: 2px 2px 0px #1e293b;
+}
+
+#root > div fieldset:first-of-type legend {
+    background-color: #0284c7;
+}
+
+#root > div fieldset:last-of-type legend {
+    background-color: #ea580c;
+}
+
+/* 온도 입력창 (input) */
+#root > div input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 12px 16px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a;
+    background-color: #ffffff;
+    border: 2.5px solid #1e293b;
+    border-radius: 12px;
+    outline: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* 입력창 클릭 시 살짝 떠오르는 포커스 효과 */
+#root > div input:focus {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px #1e293b;
+}
+
+/* 끓는점 판별 결과 배너 (Boilingverdict) */
+#root > div p {
+    margin: 4px 0 0 0;
+    padding: 16px;
+    border: 2.5px solid #1e293b;
+    border-radius: 14px;
+    box-shadow: 4px 4px 0px #1e293b;
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-align: center;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* 💧 물이 끓지 않을 때: 얼음처럼 잔잔하게 둥실거리는 애니메이션 */
+#root > div p.not-boiling {
+    background-color: #bae6fd;
+    color: #0369a1;
+    animation: chill-float 2.4s ease-in-out infinite;
+}
+
+/* 🔥 물이 끓을 때 (100℃ 이상): 냄비가 부글부글 끓듯 흔들리는 애니메이션 */
+#root > div p.boiling {
+    background: linear-gradient(135deg, #fecaca, #fed7aa);
+    color: #b91c1c;
+    box-shadow: 4px 4px 0px #991b1b;
+    animation: boil-shake 0.35s ease-in-out infinite;
+}
+
+@keyframes chill-float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes boil-shake {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-2px, -1px) rotate(-0.8deg);
+    }
+    50% {
+        transform: translate(2px, 1px) rotate(0.8deg);
+    }
+    75% {
+        transform: translate(-1px, 1px) rotate(-0.5deg);
+    }
+}

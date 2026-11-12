@@ -1,0 +1,75 @@
+/* 전체 계산기 컨테이너 (Calculator의 최상위 div) */
+#root > div {
+    max-width: 400px;
+    margin: 48px auto;
+    padding: 24px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* 개별 온도 입력 카드 (TemperatureInput의 fieldset) */
+fieldset {
+    margin: 0;
+    padding: 18px 20px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+fieldset:hover {
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+/* 입력 안내 제목 (legend) */
+legend {
+    padding: 0 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* 섭씨(첫 번째) / 화씨(두 번째) 제목 색상 구분 */
+fieldset:first-of-type legend {
+    color: #0284c7;
+}
+
+fieldset:last-of-type legend {
+    color: #ea580c;
+}
+
+/* 온도 입력창 (input) */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 12px 14px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #0f172a;
+    background-color: #f8fafc;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+/* 섭씨 입력창 포커스 효과 */
+fieldset:first-of-type input:focus {
+    background-color: #ffffff;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* 화씨 입력창 포커스 효과 */
+fieldset:last-of-type input:focus {
+    background-color: #ffffff;
+    border-color: #ea580c;
+    box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.15);
+}

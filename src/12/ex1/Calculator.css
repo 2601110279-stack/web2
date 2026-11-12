@@ -1,0 +1,66 @@
+/* 전체 컨테이너 (fieldset) 스타일 */
+fieldset {
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 24px 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* 제목 (legend) 스타일 */
+legend {
+    padding: 0 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* 온도 입력창 (input) 스타일 */
+input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    color: #334155;
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+input:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* 결과 텍스트 (Boilingverdict의 p 태그) 스타일 */
+fieldset p {
+    margin: 18px 0 0 0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 끓을 때 (빨간색 계열 강조) */
+fieldset p.boiling {
+    background-color: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+}
+
+/* 끓지 않을 때 (파란색 계열 강조) */
+fieldset p.not-boiling {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
