@@ -40,7 +40,7 @@ import reportWebVitals from './reportWebVitals';
 // import Calculator from "./12/ex3/Calculator";
 // import Calculator from "./12/ex4/Calculator";
 // import Calculator from "./12/ex5/Calculator";
-import Fantasy from './13/ex1/FancyBorder';
+// import Fantasy from './13/ex1/FancyBorder';
 import WelcomeDialog from "./13/ex1/WelcomeDialog";
 
 

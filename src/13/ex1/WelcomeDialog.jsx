@@ -12,13 +12,12 @@ function WelcomeDialog(props) {
                 우리 사이트에 방문하신 것을 환영합니다!
             </p>
         </FancyBorder>
-
             <FancyBorder color="green">
                 <h1 className="Dialog-title">
-                    공지사항
+                    안내사항
                 </h1>
                 <p className="Dialog-description">
-                    새로운 기능 업데이트가 완료되었습니다.
+                    오늘 수능시험있는 날입니다.
                 </p>
             </FancyBorder>
         </div>
