@@ -1,0 +1,47 @@
+/* 다이얼로그 내부 입력 영역 배치 */
+.FancyBorder input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.FancyBorder input:focus {
+    background-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.FancyBorder input::placeholder {
+    color: #9ca3af;
+}
+
+/* 가입하기 버튼 스타일 */
+.FancyBorder button {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.FancyBorder button:hover {
+    background-color: #1d4ed8;
+}
+
+.FancyBorder button:active {
+    transform: scale(0.99);
+}

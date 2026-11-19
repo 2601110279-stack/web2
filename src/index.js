@@ -41,15 +41,17 @@ import reportWebVitals from './reportWebVitals';
 // import Calculator from "./12/ex4/Calculator";
 // import Calculator from "./12/ex5/Calculator";
 // import Fantasy from './13/ex1/FancyBorder';
-import WelcomeDialog from "./13/ex1/WelcomeDialog";
-
+// import WelcomeDialog from "./13/ex1/WelcomeDialog";
+// import WelcomeDialog from "./13/ex2/WelcomeDialog";
+// import SignUpDialog from "./13/ex3/SignUpDialog";
+import ProfileCard from './13/ex4/ProfileCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 setInterval(() => {
     root.render(
         <React.StrictMode>
-            <WelcomeDialog />
+            <ProfileCard />
         </React.StrictMode>
     );
     },   1000
