@@ -1,0 +1,50 @@
+/* 전체 컨테이너 및 기본 폰트 설정 (선택사항) */
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* FancyBorder 기본 스타일 */
+.FancyBorder {
+    padding: 24px 32px;
+    margin: 16px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    min-width: 300px;
+}
+
+/* color 속성에 따른 테두리 색상 분기 */
+.FancyBorder-blue {
+    border: 2px solid #3b82f6; /* 파란색 테두리 */
+}
+
+.FancyBorder-green {
+    border: 2px solid #10b981; /* 초록색 테두리 (필요시 활용) */
+}
+
+.FancyBorder-red {
+    border: 2px solid #ef4444; /* 빨간색 테두리 (필요시 활용) */
+}
+
+/* WelcomeDialog 내부 타이틀 스타일 */
+.Dialog-title {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* WelcomeDialog 내부 설명 텍스트 스타일 */
+.Dialog-description {
+    margin: 0;
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.5;
+}

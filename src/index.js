@@ -39,14 +39,17 @@ import reportWebVitals from './reportWebVitals';
 // import Reservation from "./11/Reservation";
 // import Calculator from "./12/ex3/Calculator";
 // import Calculator from "./12/ex4/Calculator";
-import Calculator from "./12/ex5/Calculator";
+// import Calculator from "./12/ex5/Calculator";
+import Fantasy from './13/ex1/FancyBorder';
+import WelcomeDialog from "./13/ex1/WelcomeDialog";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 setInterval(() => {
     root.render(
         <React.StrictMode>
-            <Calculator />
+            <WelcomeDialog />
         </React.StrictMode>
     );
     },   1000
